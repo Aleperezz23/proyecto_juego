@@ -115,7 +115,7 @@ class Character:
         self.update_animation()
 
         #Cuando se mueve pierde energia
-        self.update_energy(-0.1)
+        self.update_energy(-0.01)
 
 
     def check_collision(self, x, y, obj):
