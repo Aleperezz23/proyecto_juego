@@ -15,7 +15,7 @@ class World:
                            random.randint(0, height-constants.SMALL_STONE)) for _ in range(20)]
 
         
-        grass_path = os.path.join ('desarrollo_proyecto_juego', 'assets', 'images', 'objects', 'grass.png')
+        grass_path = os.path.join ('assets', 'images', 'objects', 'grass.png')
         self.grass_image = pygame.image.load(grass_path).convert()
         self.grass_image = pygame.transform.scale(self.grass_image,
                                                   (constants.GRASS, constants.GRASS))        

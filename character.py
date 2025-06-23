@@ -10,7 +10,7 @@ class Character:
         self.inventory = {"wood":0, "stone":0}
 
         # Cargar la hoja de sprite
-        image_path = os.path.join ('desarrollo_proyecto_juego', 'assets', 'images', 'character', 'Player.png')
+        image_path = os.path.join ('assets', 'images', 'character', 'Player.png')
         self.sprite_sheet = pygame.image.load(image_path).convert_alpha()
 
         #Animation properties
@@ -62,7 +62,7 @@ class Character:
 
 
     def load_item_image(self, filename):
-        path = os.path.join('desarrollo_proyecto_juego', 'assets', 'images', 'objects', filename)
+        path = os.path.join('assets', 'images', 'objects', filename)
         image = pygame.image.load(path).convert_alpha()
         return pygame.transform.scale(image, (40, 40))
 
